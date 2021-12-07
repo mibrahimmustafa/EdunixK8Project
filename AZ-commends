@@ -1,0 +1,19 @@
+
+
+
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+az aks browse --resource-group myResourceGroup --name myAKSCluster 
+
+kubectl get pods       #List all pods in ps output format
+kubectl get all       #list all resources 
+
+kubectl label pod lamp_pod label=app 
+
+kubectl expose pod lamp_pod  --type=LoadBalancer --port=80,443 #to expose the pod in order to get public sharing ip 
+
+kubectl get all       #list all resources
+
+kubectl create -f ConfigYamalFile.yml
+
+
+kubectl get all 
